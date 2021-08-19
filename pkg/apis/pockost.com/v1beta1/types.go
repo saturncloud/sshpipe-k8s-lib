@@ -20,6 +20,7 @@ type SshPipe struct {
 type SshPipeSpec struct {
 	Users  []string   `json:"users"`
 	Target TargetSpec `json:"target"`
+	Secret string     `json:"secret"`
 }
 type TargetSpec struct {
 	Name string `json:"name"`
